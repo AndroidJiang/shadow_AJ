@@ -20,7 +20,7 @@ package com.tencent.shadow.dynamic.impl;
 
 import android.content.Context;
 
-import com.ajiang.plugin_manager.LphPluginManager;
+import com.ajiang.plugin_manager.AJPluginManager;
 import com.tencent.shadow.dynamic.host.ManagerFactory;
 import com.tencent.shadow.dynamic.host.PluginManagerImpl;
 
@@ -30,6 +30,6 @@ import com.tencent.shadow.dynamic.host.PluginManagerImpl;
 public final class ManagerFactoryImpl implements ManagerFactory {
     @Override
     public PluginManagerImpl buildManager(Context context) {
-        return new LphPluginManager(context);
+        return new AJPluginManager(context);
     }
 }
