@@ -1,0 +1,11 @@
+
+rootProject.name = "Shadow_AJ"
+include ':shadow-host'
+include ':shadow-plugin'
+includeBuild 'sdk/coding'
+includeBuild 'sdk/core'
+includeBuild 'sdk/dynamic'
+include ':constants'
+include ':shadow-manager'
+include ':shadow-runtime'
+include ':shadow-loader'
