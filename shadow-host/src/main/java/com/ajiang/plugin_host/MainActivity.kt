@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             ) // partKey 每个插件都有自己的 partKey 用来区分多个插件，如何配置在下面讲到
             bundle.putString(
                 Constant.KEY_ACTIVITY_CLASSNAME,
-                "com.ajiang.plugin_host.PluginMainActivity"
+                "me.jessyan.mvparms.demo.mvp.ui.activity.LoginActivity"
             ) //要启动的插件的Activity页面
             bundle.putBundle(Constant.KEY_EXTRAS, Bundle()) // 要传入到插件里的参数
             MyApplication.getApp().getPluginManager().enter(
