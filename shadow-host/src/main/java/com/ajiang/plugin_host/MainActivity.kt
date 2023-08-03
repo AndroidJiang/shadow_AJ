@@ -1,19 +1,28 @@
 package com.ajiang.plugin_host
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.view.View
+import android.widget.LinearLayout
+import androidx.appcompat.app.AppCompatActivity
 import com.aj.constants.Constant
-import com.example.shadow_aj.R
 import com.ajiang.plugin_host.base.MyApplication
 import com.ajiang.plugin_host.plugin_manager.PluginHelper
+import com.ajiang.plugin_host.plugin_view.HostAddPluginViewActivity
+import com.example.shadow_aj.R
 import com.tencent.shadow.dynamic.host.EnterCallback
 
 class MainActivity : AppCompatActivity() {
+    private val mHandler: Handler = Handler()
+    private var ll: LinearLayout? = null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        ll = findViewById<LinearLayout>(R.id.ln_loading)
     }
 
     fun startPlugin(view: View) {
@@ -48,12 +57,13 @@ class MainActivity : AppCompatActivity() {
                 object : EnterCallback {
                     override fun onShowLoadingView(view: View) {
                         Log.e("PluginLoad", "onShowLoadingView")
-//                        loading(view)
+                        loading(view)
                         //这里进行加载视图
                     }
 
                     override fun onCloseLoadingView() {
                         Log.e("PluginLoad", "onCloseLoadingView")
+                        removeLoading()
                     }
 
                     override fun onEnterComplete() {
@@ -62,5 +72,20 @@ class MainActivity : AppCompatActivity() {
                     }
                 })
         })
+    }
+    private fun loading(view: View) {
+        mHandler.post(Runnable {
+            ll!!.removeAllViews()
+            ll!!.addView(view)
+        })
+    }
+    private fun removeLoading() {
+        mHandler.post(Runnable {
+            ll!!.removeAllViews()
+        })
+    }
+    fun addPluginView(view: View) {
+        val intent = Intent(this, HostAddPluginViewActivity::class.java)
+        startActivity(intent)
     }
 }

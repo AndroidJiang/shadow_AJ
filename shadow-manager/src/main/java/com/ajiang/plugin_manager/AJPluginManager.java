@@ -82,7 +82,7 @@ public class AJPluginManager extends FastPluginManager {
         Intent pluginIntent = new Intent();
         pluginIntent.setClassName(
                 context.getPackageName(),
-                "com.tencent.shadow.sample.plugin.app.lib.usecases.service.HostAddPluginViewService"
+                "me.jessyan.mvparms.demo.app.service.HostAddPluginViewService"
         );
         pluginIntent.putExtras(bundle);
         try {

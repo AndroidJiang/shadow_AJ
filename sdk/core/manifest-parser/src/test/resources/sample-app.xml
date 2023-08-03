@@ -95,6 +95,6 @@
             android:authorities="com.tencent.shadow.sample.host.provider.test" />
 
         <service
-            android:name="com.tencent.shadow.sample.plugin.app.lib.usecases.service.HostAddPluginViewService" />
+            android:name="me.jessyan.mvparms.demo.app.service.HostAddPluginViewService" />
     </application>
 </manifest>

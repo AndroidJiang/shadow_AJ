@@ -58,6 +58,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/constants" />
+            <option value="$PROJECT_DIR$/sample-host-lib" />
             <option value="$PROJECT_DIR$/sdk/coding" />
             <option value="$PROJECT_DIR$/sdk/coding/aar-to-jar-plugin" />
             <option value="$PROJECT_DIR$/sdk/coding/android-jar" />

@@ -31,6 +31,9 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.ajiang.plugin_host.plugin_view.HostAddPluginViewActivity"
+            android:process=":plugin"
+            />
         <!--container 注册
            注意configChanges需要全注册
            theme需要注册成透明
@@ -64,9 +67,16 @@
             android:hardwareAccelerated="true"
             android:theme="@style/PluginContainerActivity"
             android:process=":plugin" />
+
         <service
             android:name="com.ajiang.plugin_host.plugin_manager.MainPluginProcessService"
             android:process=":plugin" />
+        <receiver android:name="com.ajiang.plugin_host.plugin_view.MainProcessManagerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="sample_host.manager.startPluginService" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
