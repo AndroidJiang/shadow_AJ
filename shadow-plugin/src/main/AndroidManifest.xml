@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Shadow_AJ">
         <activity
-            android:name="com.ajiang.plugin_host.PluginMainActivity"
+            android:name="me.jessyan.mvparms.demo.mvp.ui.activity.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

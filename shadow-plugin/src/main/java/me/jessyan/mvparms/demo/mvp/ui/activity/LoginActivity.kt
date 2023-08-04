@@ -1,13 +1,13 @@
-package com.ajiang.plugin_host
+package me.jessyan.mvparms.demo.mvp.ui.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.ajiang.plugin_host.R
 import com.test.PluginArmActivity
-import com.test.PluginMain2Activity
 
-class PluginMainActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
