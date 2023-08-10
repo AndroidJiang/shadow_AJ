@@ -88,6 +88,7 @@
             <option value="$PROJECT_DIR$/sdk/dynamic/dynamic-manager" />
             <option value="$PROJECT_DIR$/sdk/dynamic/dynamic-manager-multi-loader-ext" />
             <option value="$PROJECT_DIR$/shadow-host" />
+            <option value="$PROJECT_DIR$/shadow-host-base" />
             <option value="$PROJECT_DIR$/shadow-loader" />
             <option value="$PROJECT_DIR$/shadow-manager" />
             <option value="$PROJECT_DIR$/shadow-plugin" />

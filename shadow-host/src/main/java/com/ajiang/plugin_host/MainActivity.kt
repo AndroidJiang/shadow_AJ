@@ -6,12 +6,14 @@ import android.os.Handler
 import android.util.Log
 import android.view.View
 import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.aj.constants.Constant
 import com.ajiang.plugin_host.base.MyApplication
 import com.ajiang.plugin_host.plugin_manager.PluginHelper
 import com.ajiang.plugin_host.plugin_view.HostAddPluginViewActivity
 import com.example.shadow_aj.R
+import com.example.shadow_host_base.utils.NetworkUtils
 import com.tencent.shadow.dynamic.host.EnterCallback
 
 class MainActivity : AppCompatActivity() {
@@ -26,6 +28,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun startPlugin(view: View) {
+//        if(!NetworkUtils.isConnected()){
+//            Toast.makeText(this,"无网络",Toast.LENGTH_SHORT).show()
+//            return
+//        }
         PluginHelper.getInstance().singlePool.execute(Runnable {
             MyApplication.getApp().loadPluginManager(
                 PluginHelper.getInstance().pluginManagerFile)

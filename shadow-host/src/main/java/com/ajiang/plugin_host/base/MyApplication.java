@@ -13,6 +13,7 @@ import android.webkit.WebView;
 import com.ajiang.plugin_host.plugin_manager.AndroidLogLoggerFactory;
 import com.ajiang.plugin_host.plugin_manager.PluginHelper;
 import com.ajiang.plugin_host.plugin_manager.Shadow;
+import com.example.shadow_host_base.utils.NetworkUtils;
 import com.tencent.shadow.core.common.LoggerFactory;
 import com.tencent.shadow.dynamic.host.DynamicRuntime;
 import com.tencent.shadow.dynamic.host.PluginManager;
@@ -28,7 +29,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         sApp = this;
-
+//        NetworkUtils.init(this);
         detectNonSdkApiUsageOnAndroidP();
         setWebViewDataDirectorySuffix();
         LoggerFactory.setILoggerFactory(new AndroidLogLoggerFactory());

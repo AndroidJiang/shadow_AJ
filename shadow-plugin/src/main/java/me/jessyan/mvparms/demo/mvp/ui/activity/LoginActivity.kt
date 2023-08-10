@@ -1,9 +1,9 @@
 package me.jessyan.mvparms.demo.mvp.ui.activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.ajiang.plugin_host.R
 import com.test.PluginArmActivity
 
