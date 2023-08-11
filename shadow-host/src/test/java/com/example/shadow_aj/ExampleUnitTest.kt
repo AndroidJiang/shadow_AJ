@@ -1,4 +1,4 @@
-package com.example.shadow_aj
+package com.ajiang.plugin_host
 
 import org.junit.Test
 

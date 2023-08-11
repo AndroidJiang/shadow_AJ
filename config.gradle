@@ -1,0 +1,25 @@
+ext {
+
+    common_versions = [
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.3",
+            minSdkVersion    : 19,
+            targetSdkVersion : 29,
+            versionCode      : 186,
+            versionName      : "2.5.2"
+    ]
+
+    third_versions = [
+            androidSupportSdkVersion: "28.0.0",
+            androidXSdkVersion      : "1.1.0",
+            retrofitSdkVersion      : "2.7.2",
+            dagger2SdkVersion       : "2.26",
+            glideSdkVersion         : "4.11.0",
+            butterknifeSdkVersion   : "10.2.1",
+            rxlifecycleSdkVersion   : "1.0",
+            rxlifecycle2SdkVersion  : "2.2.2",
+            espressoSdkVersion      : "3.0.1",
+            canarySdkVersion        : "2.2"
+    ]
+
+}

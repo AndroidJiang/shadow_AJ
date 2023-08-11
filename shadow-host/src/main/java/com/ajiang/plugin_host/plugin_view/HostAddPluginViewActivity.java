@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
-import com.example.shadow_aj.R;
+import com.ajiang.plugin_host.R;
 import com.tencent.shadow.sample.host.lib.HostAddPluginViewContainer;
 import com.tencent.shadow.sample.host.lib.HostAddPluginViewContainerHolder;
 

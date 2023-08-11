@@ -20,7 +20,7 @@ package com.ajiang.plugin_host.plugin_manager;
 
 import android.content.Context;
 
-import com.example.shadow_aj.BuildConfig;
+import com.ajiang.plugin_host.BuildConfig;
 
 import org.apache.commons.io.FileUtils;
 

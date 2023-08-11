@@ -5,11 +5,11 @@ plugins {
 
 android {
     namespace 'com.aj.constants'
-    compileSdk 33
+    compileSdk common_versions.compileSdkVersion
 
     defaultConfig {
-        minSdk 24
-        targetSdk 33
+        minSdk common_versions.minSdkVersion
+        targetSdk common_versions.targetSdkVersion
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
