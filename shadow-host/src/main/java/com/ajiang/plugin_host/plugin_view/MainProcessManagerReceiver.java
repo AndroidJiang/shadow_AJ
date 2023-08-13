@@ -5,13 +5,13 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.aj.constants.Constant;
-import com.ajiang.plugin_host.base.MyApplication;
+import com.ajiang.plugin_host.puremusic.App;
 
 
 public class MainProcessManagerReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        MyApplication.getApp().getPluginManager()
+        App.Companion.getApp().getPluginManager()
                 .enter(context, Constant.FROM_ID_LOAD_VIEW_TO_HOST, intent.getExtras(), null);
     }
 }
